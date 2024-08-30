@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #277dff;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+header div{
+    width: 300px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+header img{
+    width: 100%;
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 45px;
+    /* border: 2px solid red; */
+}
+
+li{
+    width: 14%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div main {
+    width: 100%;
+    height: 250px;
+    /* padding: 10px; */
+    border: 2px solid red;
+
+  }
+
+.div1 h1{
+    float: left;
+    width: 40%;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(82, 82, 82);
+    align-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #277dff;
+}
+
+.div2 img{
+    float: right;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background-color: #85b6ff;
+    right: 0;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+main .circulos::after{
+    /* height: 100px; */
+    flex-wrap: wrap;
+    display: table;
+}
+
+.circ_containerz{
+    content: "";
+    clear: both;
+    float: left;
+    width: 15%;
+    padding: 5px;
+}
+
+.circ_container img{
+    border-radius: 100%;
+    border: 5px solid #277dff;
+}
+
+
+/* SUB MENU */
+
+/* ul ul{
+    display: none;
+    position: absolute;
+    width: auto;
+    background-color: white;
+    padding: 7px;
+    border: 2px solid #c47741;
+} */

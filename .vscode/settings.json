@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.allowMnemonics": false,
+    "window.titleBarStyle": "custom",
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false
+}
