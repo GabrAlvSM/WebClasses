@@ -14,6 +14,8 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    /* backdrop-filter: blur(2px); */
+    opacity: 0.99;
 }
 
 .box{
@@ -99,6 +101,10 @@
     transition: all 0.4s ease;
 }
 
+.form-box .input-group input::placeholder{
+    color: red;
+}
+
 .form-box .input-group input:focus{
     border-color: rgb(0, 110, 255);
 }
@@ -121,6 +127,7 @@
     margin-top: 15px;
     cursor: pointer;
     font-size: 16px;
+    border: 2px solid brown;
 }
 
 .form-box .input-group button:hover{
