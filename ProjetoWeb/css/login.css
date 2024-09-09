@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login{
+    background-color: rgb(39, 39, 39);
+    background-image: url(../img/porsche-930-1980.webp);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin-bottom: 40px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.area-login{
+    width: 90%;
+    height: 75%;
+    background-color: rgba(153, 153, 153, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    animation: animaBox 3s infinite;
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(16, 27, 37, 0.637);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #bc2a39;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 30px;
+}
+
+.form-login{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.group{
+    position: relative;
+}
+
+.form-login .group label{
+    font-size: 16px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: aliceblue;
+    transition: all 0.3 ease;
+}
+
+.form-login .group input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.form-login .group input:placeholder-shown+label{
+    top: 10px;
+    background-color: transparent;
+}
+
+.form-login .group input:focus{
+    border-color: #edbc6b;
+}
+
+.form-login .group input:focus+label{
+    top: -10px;
+    left: 10px;
+    background-color: rgba(16, 27, 37, 1);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    /* border: 1px solid yellow; */
+    /* padding: 2px; */
+}
+
+.form-login p{
+    display: flex;
+    justify-content: right;
+    font-size: 12px;
+    color: aliceblue;
+}
+
+.form-login p a{
+    text-decoration: none;
+    color: yellow;
+    /* display: flex; */
+    /* justify-items: right;    */
+
+}
+
+.form-login button{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #bc2a39;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.area-linhas{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
+    /* animation: animaBox 3s infinite; */
+}
+
+.linha{
+    height: 40%;
+    width: 2px;
+    background-color: #edbc6b;
+    align-items: center;
+    justify-content: center;
+}
+
+.setas{
+    width: 0%;
+    height: 20%;
+    background-color: #edbc6b;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.seta{
+    transform: rotate(90deg);
+    color: #edbc6b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.img-login{
+    display: flex;
+    width: 500px;
+    border-radius: 15px;
+}
+.img-login img{
+    height: 100%;
+    width: 100%;
+    border: 15px;
+    object-fit: cover;
+}
+
+@keyframes animaBox{
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 2px 2px 40px 2px #edbc6b;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
