@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOPO */
+
+.navegacao{
+    /* background-color: #f9f9f9; */
+    background-image: url(../IMG/Quadrado\ logo\ 2.svg);
+    background-size: 35vh;
+    /* background-size: 15%; OPCAO EXTRA */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    /* flex-direction: column; */
+    justify-content: top;
+}
+
+.cabeca{
+    background-color: #33404D;
+    /* flex-direction: row */
+    height: 137px;
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+}
+
+.nav-cabeca{
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.logo-control{
+    padding: 2px;
+    padding-left: 5px;
+    /* height: 100%;
+    background-color: yellow; */
+}
+
+#img-logo{
+    height: 100%;
+    width: 100%;
+}
+
+.nav-cabeca H3{
+    /* padding-right: 60%; */
+    /* border-right: 400px; */
+    width: 80%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #33404D;
+    font-size: 23px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.usu{
+    padding-right: 5%;
+    height: 100%;
+    width: auto;  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.usu-botao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30%;
+    width: 70%;
+    color: #33404D;
+    font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* LATERAL */
+
+.lateral{
+    position: fixed;
+    top: 137px;
+    width: 30vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #33404D;
+    align-content: space-evenly;
+}
+
+.menu-Lateral{
+    left: 10%;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;   
+}
+
+.botao{
+    width: 100%;
+    height: 89px;
+    display: flex;
+    align-content: center;
+    justify-content: right;
+}
+
+.botao button{
+    background-color: #2d3945;
+    width: 95%;
+    height: 59px;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #3AA867;
+    
+}.botao button:hover{
+    background-color: #181f26;
+    color: white;
+}
+
+.sair{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.sair button{
+    width: 80%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2d3945;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #3AA867;
+}
+
+.sair button:hover{
+    background-color: #181f26;
+    color: white;
+}
