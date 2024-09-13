@@ -11,9 +11,10 @@
     background-size: cover;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    /* justify-content: center; */
+    /* padding: 20px; */
     /* backdrop-filter: blur(2px); */
     opacity: 0.99;
 }
@@ -24,6 +25,8 @@
     width: 1500px;
     display: flex;
     height: 600px;
+    position: relative;
+    top: 30px;
 }
 
 .img-box{
