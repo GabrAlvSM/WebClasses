@@ -21,10 +21,12 @@
 /* TOPO */
 
 .navegacao{
+    background-color: var(--cor-fundo);
     background-image: url(../IMG/Quadrado\ logo\ 2.svg);
     background-size: 35vh;
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -46,14 +48,13 @@
     height: 100px;
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    align-content: space-evenly;
 }
 
 .logo-control{
+    width: fit-content;
     padding: 2px;
     padding-left: 5px;
-    /* height: 100%;
-    background-color: yellow; */
 }
 
 #img-logo{
@@ -62,48 +63,43 @@
 }
 
 .nav-cabeca H3{
+    color: var(--cinza-control);
     width: 80%;
     padding-left: 20px;
     display: flex;
     align-items: center;
-    color: var(--cinza-control);
     font-size: 23px;
 }
 
 .usu{
-    padding-right: 5%;
-    height: 100%;
-    width: auto;  
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.usu-botao{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 30%;
-    width: 70%;
     color: var(--cinza-control);
+    height: 100%;
+    width: 15%;  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     font-size: 17px;
-    text-decoration: none;
 }
 
 /* INFO USUARIO */
 
 .usu-detalhes{
+    background-color: var(--cor-fundo);
     display: none;
     position: absolute;
-    /* min-width: 300px; */
     width: auto;
-    background-color: var(--cor-fundo);
     border: 2px solid var(--cinza-control);
     padding: 5px;
     text-decoration: none;
     align-content: center;
     justify-content: space-between;
-    right: 150px;
+    right: 2%;
+}
+
+.usu-detalhes img{
+    border: 2px solid var(--verde-control);
+    margin-right: 5px;
+    border-radius: 100px;
 }
 
 .texto-usu{
@@ -131,28 +127,29 @@
 .menu-usuario:hover .usu-detalhes{
     display: flex;
     flex-direction: row;
+    min-width: 300px;
 }
 
 /* LATERAL */
 
 .lateral{
+    background-color: var(--cinza-control);
     position: fixed;
     top: 137px;
     width: 25vh;
     height: 90vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--cinza-control);
     align-content: space-evenly;
 }
 
 .menu-Lateral{
-    left: 10%;
     width: 100%;
     height: 65vh;
     display: flex;
     flex-direction: column;
     bottom: 10px;   
+    justify-content: right;
 }
 
 .botao{
@@ -163,21 +160,40 @@
     justify-content: right;
 }
 
-
-.botao button{
+.botao .botao-Lateal{
     background-color: #2d3945;
     width: 95%;
     height: 59px;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px 0px 0px 10px;
     border: none;
     outline: none;
+    color: var(--cor-fundo);
     font-weight: 600;
     font-size: 13px;
-    color: var(--cor-fundo);
-    cursor: pointer;        
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20%;
+    /* background-color: red; */
 }
+
+.botao-Lateal img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    /* height: 25%; */
+    /* background-color: black; */
+}
+
+.botao-Lateal .texto-bot{
+    display: flex;
+    padding-left: 7px;
+    font-size: 13px;
+}
+
 .botao-Lateal:hover{
     background-color: #181f26;
     color: var(--verde-control);
@@ -191,9 +207,13 @@
     width: 100%;
     display: flex;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
+.sair .botao-Lateal img{
+    width: auto;
+    /* height: 27px; */
+}
 .sair button{
     width: 80%;
     height: 59px;
@@ -201,10 +221,27 @@
     align-items: center;
     justify-content: center;
     background-color: #2d3945;
-    border-radius: 10px;
+    border-radius: 3px;
     border: none;
     font-weight: 600;
     font-size: 13px;
-    color: var(--cor-fundo);;
+    color: var(--cor-fundo);
     cursor: pointer;
+    justify-content: center;
+    padding-right: 5%;
+}
+
+main{ 
+    color: var(--cinza-control);
+    position: absolute;
+    display: flex;
+    top: 160px;
+    right: 2vh;
+    left: 27vh;
+    bottom: 2vh;
+    height: auto;
+    width: auto;
+    background-color: rgba(205, 205, 205, 0.52);
+    align-items: center;
+    justify-content: center;
 }
