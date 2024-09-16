@@ -4,60 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navegação PassControl</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../CSS/navegacao.css">
 </head>
 <body class="navegacao">
     <header class="cabeca">
         <nav class="nav-cabeca">
             <div class="logo-control">
-                <!-- INSERIR IMAGEM OU DESENHAR EIS A QUESTÃO -->
-
-                <!-- <div class="diamante">
-                    <span class=""></span>                
-                </div>
-                <div class="diamante">
-                    <span class=""></span>                
-                </div>
-                <div class="diamante">
-                    <span class=""></span>                
-                </div> -->
-
                 <img src="../IMG/logo control.svg" alt="LOGOCONTROL" id="img-logo">
             </div>
             <H3>PassControl</H3>
             <div class="usu">
-                <a class="usu-botao" href="">Administrador</a>
-                <!-- <button type="button">ADMINISTRADOR</button> -->
+                <!-- <li class="usu-botao">Administrador</li> -->
+                
+                
+                <!-- INFO DO USUARIO -->
+                <div class="menu-usuario">
+                    <a class="usu-botao">Administrador</a>
+                    <nav class="usu-detalhes"> 
+                        <img src="../IMG/image 33.svg" alt="">
+                        <ul class="texto-usu">
+                            <li class="nome">Nome do Usuário</li>
+                            <li class="email">funcionario123@fun.br</li>
+                            <li><a href="">Editar Informações</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
             </div>
         </nav>
-        <!-- <div class="blackBar">
-            <span class=""></span>
-        </div> -->
     </header>
 
     <div class="lateral">
         <nav class="menu-Lateral">
             <div class="botao">
                 <button class="botao-Lateal">
-                    <img class="icone" src="../IMG/atend.svg" alt="">Atendimento
+                    <img class="icone" src="../IMG/atend.svg" alt="">
+                    Atendimento
                 </button>
             </div>
             <div class="botao">
-                <!-- ICONE -->
-                <button class="botao-Lateal">Monitor</button>
+                <button class="botao-Lateal">
+                    <img src="../IMG/monitor.svg" alt="ICONE MONITOR">
+                    Monitor
+                </button>
             </div>
             <div class="botao">
-                <!-- ICONE -->
-                <button class="botao-Lateal">Relatórios</button>
+                <button class="botao-Lateal">
+                    <img src="../IMG/nota.svg" alt="ICONE RELATORIOS">
+                    Relatórios
+                </button>
             </div>
             <div class="botao">
-                <!-- ICONE -->
-                <button class="botao-Lateal">Gestão</button>
+                <button class="botao-Lateal">
+                    <img src="../IMG/gestao.svg" alt="ICONE GESTAO">
+                    Gestão
+                </button>
             </div>
         </nav>
         <div class="sair">
-            <!-- ICONE -->
-            <button class="botao-Lateal">Sair</button>
+            <button class="botao-Lateal">
+                <img src="../IMG/sair.svg" alt="ICONE SAIR">
+                Sair
+            </button>
         </div>
     </div>
 </body>
