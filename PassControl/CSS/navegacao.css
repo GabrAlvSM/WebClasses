@@ -16,6 +16,7 @@
     font-family: var(--font-main);
     font-style: bold;
     list-style: none;
+    z-index: 1000;
 }
 
 /* TOPO */
@@ -92,20 +93,21 @@
     padding: 5px;
     text-decoration: none;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
     right: 2%;
 }
 
 .usu-detalhes img{
     border: 2px solid var(--verde-control);
-    margin-right: 5px;
+    margin-right: 10px;
     border-radius: 100px;
 }
 
 .texto-usu{
+    display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
-    text-decoration: none;
 }
 
 .texto-usu .nome{
@@ -232,6 +234,7 @@
 }
 
 main{ 
+    z-index: 1;
     color: var(--cinza-control);
     position: absolute;
     display: flex;
