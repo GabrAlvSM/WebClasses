@@ -233,18 +233,118 @@
     padding-right: 5%;
 }
 
+
+/* CORPO TESTE */
+
 main{ 
     z-index: 1;
     color: var(--cinza-control);
     position: absolute;
     display: flex;
-    top: 160px;
-    right: 2vh;
-    left: 27vh;
-    bottom: 2vh;
+    top: 175px;
+    right: 4vh;
+    left: 29vh;
+    bottom: 4vh;
     height: auto;
     width: auto;
     background-color: rgba(205, 205, 205, 0.52);
+    justify-content: space-between;
+    padding: 30px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.esqu-top{   
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    /* background-color: red; */
+}
+
+.top{
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+
+.guiche{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 49%;
+    border: 2px solid var(--cinza-control);
+    background-color: var(--cor-fundo);
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.qnt-fila{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    border: 2px solid var(--cinza-control);
+    background-color: var(--cor-fundo);
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.bottom{
+    padding-top: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: chartreuse; */
+}
+
+.intervalo{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--cinza-control);
+    color: var(--cor-fundo);
+    font-size: 27px;
+    font-weight: 800;
+    cursor: pointer;
+    outline: none;
+    border: 10px;
+}
+
+.dir-top{
+    padding-top: 20px;
+    padding-right: 40px;
+    height: 130px;
+    width: auto;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cons-fila{
+    margin-right: 20px;
+    height: 100%;
+    width: 230px;
+    background-color: var(--verde-control);
+    border-radius: 7px;
+}
+
+.cham-senha{
+    height: 100%;
+    width: 230px;
+    background-color: var(--verde-control);
+    border-radius: 7px;
 }
