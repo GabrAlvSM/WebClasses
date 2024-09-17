@@ -326,9 +326,9 @@ main{
 .dir-top{
     padding-top: 20px;
     padding-right: 40px;
-    height: 130px;
+    height: 140px;
     width: auto;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -337,9 +337,12 @@ main{
 .cons-fila{
     margin-right: 20px;
     height: 100%;
-    width: 230px;
+    width: 10vh;
     background-color: var(--verde-control);
     border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 .cham-senha{
@@ -347,4 +350,7 @@ main{
     width: 230px;
     background-color: var(--verde-control);
     border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
