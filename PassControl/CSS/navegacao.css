@@ -248,3 +248,74 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+/*  TESTE DE TABELA  */
+.tabela{
+    width: 99%;
+    height: auto;
+}
+
+.tabela-atendidos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+.tabela-atendidos thead{
+    height: 3.5vh;
+    background-color: var(--cinza-control);
+    display: flex;
+    color: var(--cor-fundo);
+}
+
+.tabela-atendidos tbody{
+    color: var(--cinza-control);
+}
+
+.tabela-atendidos tr{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.tabela-atendidos th, td{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-height: 3.5vh;
+    text-transform: capitalize;
+    align-content: center;
+    text-indent: 3px;
+
+    /* POGzão na veia */
+    margin-left: -1px;
+    margin-bottom: -1px;
+}
+
+
+/* AJUSTES INDIVIDUAIS DO ESPAÇO DA TABELA */
+.ordem{
+    width: 10%;
+}
+.nome{
+    width: 30%;
+}
+.servico{
+    width: 25%;
+}
+.senha{
+    width: 11%;
+}
+.inic{
+    width: 9%;
+}
+.term{
+    width: 9%;
+}
+.categoria{
+    width: 10%;
+}
