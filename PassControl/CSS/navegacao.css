@@ -29,7 +29,7 @@
     background-position: bottom right;
     background-attachment: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     align-items: start;
     justify-content: top;
@@ -233,18 +233,57 @@
     padding-right: 5%;
 }
 
+
+/* CORPO TESTE */
+
 main{ 
     z-index: 1;
     color: var(--cinza-control);
     position: absolute;
     display: flex;
-    top: 160px;
-    right: 2vh;
-    left: 27vh;
-    bottom: 2vh;
+    top: 175px;
+    right: 4vh;
+    left: 29vh;
+    bottom: 4vh;
     height: auto;
     width: auto;
     background-color: rgba(205, 205, 205, 0.52);
+    justify-content: space-between;
+    padding: 30px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+/* .esqu-top{   
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+}
+
+.top{
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.guiche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    border: 2px solid var(--cinza-control);
+    background-color: var(--cor-fundo);
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.qnt-fila{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
