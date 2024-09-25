@@ -40,7 +40,7 @@
     background-color: var(--cinza-control);
     height: 137px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     display: flex;
 }
 
@@ -187,14 +187,13 @@
     align-items: center;
     justify-content: center;
     width: auto;
-    /* height: 25%; */
-    /* background-color: black; */
 }
 
 .botao-Lateal .texto-bot{
     display: flex;
     padding-left: 7px;
     font-size: 13px;
+    width: auto;
 }
 
 .botao-Lateal:hover{
@@ -237,7 +236,7 @@
 
 /* CORPO TESTE */
 
-main{ 
+.corpo{ 
     z-index: 1;
     position: absolute;
     display: flex;
@@ -256,6 +255,8 @@ main{
     scroll-behavior: smooth;
 }
 
+
+/* TESTE DE SCROLL */
 .teste-scroll{
     margin-top: 50%;
     display: flex;
@@ -335,4 +336,31 @@ main{
 }
 .categoria{
     width: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+    .lateral{
+        width: 5vh;
+    }
+    
+    .botao-Lateal .texto-bot{
+        display: none;
+    }
+    
+    .lateral:hover{
+        width: 25vh;
+        cursor: pointer;
+    }
+
+    .lateral:hover .botao-Lateal .texto-bot{
+        display: flex;
+    }
+
+    .botao-Lateal img{
+        margin-left: 7px;
+    }
+
+    .corpo{
+        left: 7vh;
+    }
 }
