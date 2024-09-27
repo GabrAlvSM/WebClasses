@@ -13,9 +13,9 @@
     --colorPrimary4: #ffe100;
     --colorPrimary5: #ffcb45;
     --colorPrimary6: #e9a209;
-
+    
     --colorSecond1: #e91109;
-
+    
     --colorNeutra1: #fff;
     --colorNeutra2: #1d1d1d;
 }
@@ -29,6 +29,14 @@
 }
 html{
     scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 28px 8px;
 }
 
 .btnDefault{
@@ -53,6 +61,7 @@ html{
     display: flex;
     gap: 18px;
 }
+
 
 .socialMidiaButtons a{
     width: 45px;

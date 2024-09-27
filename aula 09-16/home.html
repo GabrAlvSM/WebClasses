@@ -13,16 +13,28 @@
         <nav class="navBar">
             <i class="fa-solid fa-burger" id="navLogo"> food</i>
             <ul class="navList">
-                <li class="navItem active"><a href="">Home</a></li>
-                <li class="navItem active"><a href="">Cardápio</a></li>
-                <li class="navItem active"><a href="">Avaliações</a></li>
+                <li class="navItem active"><a href="#home">Home</a></li>
+                <li class="navItem active"><a href="#cardapio">Cardápio</a></li>
+                <li class="navItem active"><a href="#depoimentos">Avaliações</a></li>
             </ul>
             <button class="btnDefault">Peça aqui!</button>
         </nav>
+        <button class="mobile-btn"> 
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- ADICIONAR ACTIVE? -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#cardapio">Cardápio</a></li>
+                <li class="nav-item"><a href="#depoimentos">Avaliações</a></li>
+            </ul>
+            <button class="btnDefault">Peça aqui</button>
+        </div>
     </header>
 
     <main class="content">
-        <section class="home">
+        <section class="home" id="home">
             <div class="shape"></div>
             <div class="cta">
                 <h1 class="title">
@@ -43,7 +55,7 @@
             </div>
         </section>
 
-        <section class="cardapio">
+        <section class="cardapio" id="cardapio">
             <h2 class="section-title">Cardápio</h2>
             <h3 class="section-subtitulo">Nossos pratos especiais.</h3>
             <div class="area-cards">
@@ -165,7 +177,7 @@
                 </div>
             </div>
         </section>
-        <section class="depoimentos">
+        <section class="depoimentos" id="depoimentos">
             <img src="./src/image/pngwing.com.png" alt="" class="depoimentos-chef">
             <div class="area-feedbacks">
                 <div class="depoimentos-content">
@@ -245,6 +257,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
