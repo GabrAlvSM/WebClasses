@@ -76,7 +76,8 @@
 .usu{
     color: var(--cinza-control);
     height: 100%;
-    width: 15%;  
+    min-width: 15%;  
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -89,19 +90,20 @@
     background-color: var(--cor-fundo);
     display: none;
     position: absolute;
+    padding-top: 100px;
     width: auto;
-    border: 2px solid var(--cinza-control);
-    padding: 5px;
+    padding: 20px;
     text-decoration: none;
     align-content: center;
+    align-items: center;
     justify-content: center;
     right: 2%;
+    border-radius: 10px;
 }
 
 .usu-detalhes img{
-    border: 2px solid var(--verde-control);
-    margin-right: 10px;
     border-radius: 100px;
+    width: 150px;
 }
 
 .texto-usu{
@@ -112,25 +114,33 @@
 }
 
 .texto-usu .nome{
-    font-size: 23px;
+    font-size: 26px;
     font-weight: 700;
 }
 
 .texto-usu .email{
-    font-size: 13px;
+    display: flex;
+    padding-top: 5px;
+    font-size: 15px;
     font-weight: 500;
 }
 
 .texto-usu li a{
+    display: flex;
     text-decoration: none;
     font-size: 13px;
     color: rgb(39, 75, 238);
+    padding-top: 10px;
 }
 
 .menu-usuario:hover .usu-detalhes{
     display: flex;
-    flex-direction: row;
-    min-width: 300px;
+    flex-direction: column;
+    min-width: 200px;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    gap: 15px;
 }
 
 /* LATERAL */
@@ -239,7 +249,6 @@
 .corpo{ 
     z-index: 1;
     position: absolute;
-    display: flex;
     top: 157px;
     right: 2vh;
     left: 27vh;
@@ -247,95 +256,8 @@
     height: auto;
     width: auto;
     background-color: rgba(205, 205, 205, 0.52);
-    justify-content: space-between;
-    justify-content: center;
-    align-items: start;
-    padding: 5px;
     overflow: auto;
     scroll-behavior: smooth;
-}
-
-
-/* TESTE DE SCROLL */
-.teste-scroll{
-    margin-top: 50%;
-    display: flex;
-    background-color: #3AA867;
-    height: 300px;
-    align-content: end;
-    align-items: end;
-}
-
-
-/*  TESTE DE TABELA  */
-.tabela{
-    width: 100%;
-    height: auto;
-}
-
-.tabela-atendidos{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    align-content: center;
-}
-
-.tabela-atendidos thead{
-    height: 3.5vh;
-    background-color: var(--cinza-control);
-    display: flex;
-    color: var(--cor-fundo);
-}
-
-.tabela-atendidos tbody{
-    color: var(--cinza-control);
-}
-
-.tabela-atendidos tr{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.tabela-atendidos th, td{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    border: 1px solid black;
-    border-collapse: collapse;
-    min-height: 3.5vh;
-    text-transform: capitalize;
-    align-content: center;
-    text-indent: 3px;
-
-    /* POGzão na veia */
-    margin-left: -1px;
-    margin-bottom: -1px;
-}
-
-
-/* AJUSTES INDIVIDUAIS DO ESPAÇO DA TABELA */
-.ordem{
-    width: 10%;
-}
-.nome{
-    width: 30%;
-}
-.servico{
-    width: 25%;
-}
-.senha{
-    width: 11%;
-}
-.inic{
-    width: 9%;
-}
-.term{
-    width: 9%;
-}
-.categoria{
-    width: 10%;
 }
 
 @media screen and (max-width: 1200px) {
