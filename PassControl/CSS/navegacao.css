@@ -191,7 +191,6 @@
     justify-content: left;
     align-items: center;
     padding-left: 20%;
-    /* background-color: red; */
 }
 
 .botao-Lateal img{
@@ -226,7 +225,6 @@
 
 .sair .botao-Lateal img{
     width: auto;
-    /* height: 27px; */
 }
 .sair button{
     width: 80%;
