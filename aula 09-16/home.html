@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Fábrica de Software</title>
 
-    <link rel="stylesheet" href="/aula 09-16/src/image/face.pngstyles/style.css">
+    <link rel="stylesheet" href="../aula 09-16/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -22,7 +22,6 @@
         <button class="mobile-btn"> 
             <i class="fa-solid fa-bars"></i>
         </button>
-        <!-- ADICIONAR ACTIVE? -->
         <div class="mobile-menu">
             <ul class="mobile-nav-list">
                 <li class="nav-item"><a href="#home">Home</a></li>
@@ -32,6 +31,38 @@
             <button class="btnDefault">Peça aqui</button>
         </div>
     </header>
+
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1" class="radio1">
+            <input type="radio" name="btn-radio" id="radio2" class="radio2">
+            <input type="radio" name="btn-radio" id="radio3" class="radio3">
+            
+            <div class="slide-box primeiro">
+                <img src="src/image/pexels-rafael-pereira-143965381-24595881.jpg" alt="" class="img-desktop">
+            </div>
+
+            <div class="slide-box">
+                <img src="../aula 09-16/src/image/banner-hamburguer.jpg" alt="" class="img-desktop">
+            </div>
+
+            <div class="slide-box">
+                <img src="../aula 09-16/src/image/hamborgar_wide.jpg" alt="" class="img-desktop">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
 
     <main class="content">
         <section class="home" id="home">
@@ -257,7 +288,12 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js" defer></script>
+    <script src="js/carrossel.js" defer></script>
+
 </body>
 </html>
