@@ -23,7 +23,7 @@
 
 /* TOPO */
 
-.navegacao{
+.control-body-navegacao{
     background-color: var(--cor-fundo);
     background-image: url(../IMG/Quadrado\ logo\ 2.svg);
     background-size: 35vh;
@@ -38,7 +38,7 @@
     overflow: hidden;
 }
 
-.cabeca{
+.cabeca-navegacao-control{
     background-color: var(--cinza-control);
     height: 137px;
     width: 100%;
@@ -115,12 +115,12 @@
     justify-content: center;
 }
 
-.texto-usu .nome{
+.texto-usu .nome-usu{
     font-size: 26px;
     font-weight: 700;
 }
 
-.texto-usu .email{
+.texto-usu .email-usu{
     display: flex;
     padding-top: 5px;
     font-size: 15px;
@@ -145,9 +145,9 @@
     gap: 15px;
 }
 
-/* LATERAL */
+/* MENU LATERAL */
 
-.lateral{
+.area-lateral-navegacao{
     background-color: var(--cinza-control);
     position: fixed;
     top: 137px;
@@ -158,7 +158,7 @@
     align-content: space-evenly;
 }
 
-.menu-Lateral{
+.menu-lateral-navegacao{
     width: 100%;
     height: 65vh;
     display: flex;
@@ -167,7 +167,7 @@
     justify-content: right;
 }
 
-.botao{
+.botao-navegacao{
     width: 100%;
     height: 89px;
     display: flex;
@@ -175,7 +175,7 @@
     justify-content: right;
 }
 
-.botao .botao-Lateal{
+.botao-navegacao .botao-lateal-navegacao{
     background-color: #2d3945;
     width: 95%;
     height: 59px;
@@ -193,40 +193,45 @@
     padding-left: 20%;
 }
 
-.botao-Lateal img{
+.botao-lateal-navegacao .icone-menu-lateral{
     display: flex;
     align-items: center;
     justify-content: center;
     width: auto;
 }
 
-.botao-Lateal .texto-bot{
+.botao-lateal-navegacao .texto-bott{
     display: flex;
     padding-left: 7px;
     font-size: 13px;
     width: auto;
 }
 
-.botao-Lateal:hover{
+.botao-lateal-navegacao:hover{
     background-color: #181f26;
     color: var(--verde-control);
 }
 
-.botao-Lateal:hover img{
+.botao-lateal-navegacao:hover .icone-menu-lateral{
     filter: invert(51%) sepia(58%) saturate(446%) hue-rotate(92deg) brightness(96%) contrast(89%);
 }
 
-.sair{
+.sair-navegacao{
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-.sair .botao-Lateal img{
+.sair-navegacao .botao-lateal-navegacao:hover{
+    background-color: #181f26;
+    color: var(--verde-control);
+}
+
+.sair-navegacao .botao-lateal-navegacao .icone-menu-lateral-sair{
     width: auto;
 }
-.sair button{
+.sair-navegacao .botao-lateal-navegacao{
     width: 80%;
     height: 59px;
     display: flex;
